@@ -553,6 +553,12 @@
       font-size: 2rem;
   }
 
+
+  .img-icon img {
+      width: 250px;
+      border-radius: 50%;
+  }
+
   .img-hint {
       font-size: 13px;
       color: var(--muted);
