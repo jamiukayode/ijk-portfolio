@@ -10,7 +10,7 @@
       --bg: #07090F;
       --bg2: #0D1117;
       --bg3: #111827;
-      --accent: #00F5C4;
+      --accent: #0cae5a;
       --accent2: #FF6B35;
       --text: #F4F4F5;
       --muted: #8B8FA8;
@@ -35,34 +35,7 @@
       /* cursor: none; */
   }
 
-  /* CURSOR */
-  /* .cursor {
-      width: 10px;
-      height: 10px;
-      background: var(--accent);
-      border-radius: 50%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.15s ease, width 0.2s, height 0.2s, background 0.2s;
-      transform: translate(-50%, -50%);
-  } */
-
-  /* .cursor-ring {
-      width: 36px;
-      height: 36px;
-      border: 1.5px solid rgba(0, 245, 196, 0.4);
-      border-radius: 50%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 9998;
-      transition: transform 0.08s linear;
-      transform: translate(-50%, -50%);
-  } */
+ 
 
   body:has(a:hover) .cursor,
   body:has(button:hover) .cursor {
