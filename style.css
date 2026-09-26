@@ -162,6 +162,7 @@
       background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
       background-size: 60px 60px;
       opacity: 0.3;
+      pointer-events: none;
   }
 
   .hero-glow {
@@ -1130,6 +1131,10 @@
       transition: border-color 0.2s, transform 0.2s;
   }
 
+  .channel-item > div:last-child {
+      min-width: 0;
+  }
+
   .channel-item:hover {
       border-color: rgba(0, 245, 196, 0.3);
       transform: translateX(4px);
@@ -1142,8 +1147,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #fff;
       font-size: 1.1rem;
       min-width: 40px;
+      transition: color 0.2s;
+  }
+
+  .channel-item:hover .channel-icon,
+  .channel-item:focus-visible .channel-icon {
+      color: #25D366;
   }
 
   .channel-icon.wa {
@@ -1170,6 +1182,7 @@
       font-size: 14px;
       font-weight: 500;
       color: var(--text);
+      overflow-wrap: anywhere;
   }
 
   .contact-form {
@@ -1333,6 +1346,44 @@
       color: var(--accent);
   }
 
+  .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+  }
+
+  .social-link {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+    text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, transform 0.2s;
+  }
+
+  .social-link i {
+      font-size: 19px;
+  }
+
+  .social-link:hover,
+  .social-link:focus-visible {
+      color: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+  }
+
+  .social-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+  }
+
   /* MOBILE NAV */
   .mobile-nav {
       display: none;
@@ -1461,6 +1512,12 @@
       footer {
           flex-direction: column;
           text-align: center;
+      }
+
+      .footer-links {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 0.75rem 1.25rem;
       }
 
       .services-grid {
