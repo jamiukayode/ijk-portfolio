@@ -4,4 +4,6 @@ https://freelance-web-developer-road-map.vercel.app/
 
 https://dev.to/jamiukayode27 ----- Dev.to
 https://hashnode.com/@techsheikh ---- Hashnode
-https://share.google/aOsumUFtV7go61MTq --- GMB profile
+https://share.google/aOsumUFtV7go61MTq --- GMB 
+https://github.com/jamiukayode ---- Github
+https://ibrahim-jamiu-kayode.vercel.app/ ---portfolio
