@@ -1,5 +1,11 @@
 #!/bin/bash
-git init
-git add .      
-git commit -m "commit from script"
-git push -u origin main
+
+git add .
+
+if git diff --cached --quiet; then
+    echo "No changes to commit."
+    exit 0
+fi
+
+git commit -m "Daily update"
+git push origin main
